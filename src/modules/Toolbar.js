@@ -1,6 +1,3 @@
-import IconAlignLeft from 'quill/assets/icons/align-left.svg'
-import IconAlignCenter from 'quill/assets/icons/align-center.svg'
-import IconAlignRight from 'quill/assets/icons/align-right.svg'
 import { BaseModule } from './BaseModule'
 
 const Parchment = window.Quill.imports.parchment
@@ -29,7 +26,7 @@ export class Toolbar extends BaseModule {
 	_defineAlignments() {
 		this.alignments = [
 			{
-				icon: IconAlignLeft,
+				icon: '<span class="material-icons">format_align_left</span>',
 				apply: () => {
 					DisplayStyle.add(this.vid, 'inline')
 					FloatStyle.add(this.vid, 'left')
@@ -38,7 +35,7 @@ export class Toolbar extends BaseModule {
 				isApplied: () => FloatStyle.value(this.vid) == 'left'
 			},
 			{
-				icon: IconAlignCenter,
+				icon: '<span class="material-icons">format_align_center</span>',
 				apply: () => {
 					DisplayStyle.add(this.vid, 'block')
 					FloatStyle.remove(this.vid)
@@ -47,7 +44,7 @@ export class Toolbar extends BaseModule {
 				isApplied: () => MarginStyle.value(this.vid) == 'auto'
 			},
 			{
-				icon: IconAlignRight,
+				icon: '<span class="material-icons">format_align_right</span>',
 				apply: () => {
 					DisplayStyle.add(this.vid, 'inline')
 					FloatStyle.add(this.vid, 'right')
@@ -84,7 +81,7 @@ export class Toolbar extends BaseModule {
 			if (idx > 0) {
 				button.style.borderLeftWidth = '0'
 			}
-			Object.assign(button.children[0].style, this.options.toolbarButtonSvgStyles)
+
 			if (alignment.isApplied()) {
 				// select button if previously applied
 				this._selectButton(button)
