@@ -1,6 +1,6 @@
 # Quill VideoResize Module
 
-A module for Quill rich text editor to allow videos to be resized with some improvements and bug fixes. Fork of [Y-WeCode/quill-video-resize-module](https://github.com/Y-WeCode/quill-video-resize-module)
+A module for Quill rich text editor to allow videos to be resized with some improvements and bug fixes. Fork of [pblobp/quill-video-resize-module](https://github.com/pblobp/quill-video-resize-module)
 
 
 ## Usage
