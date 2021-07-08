@@ -9,7 +9,7 @@ A module for Quill rich text editor to allow videos to be resized with some impr
 
 ```javascript
 import Quill from 'quill';
-import VideoResize from 'quill-video-resize-module';
+import VideoResize from 'quill-video-resize';
 
 Quill.register('modules/VideoResize', VideoResize);
 
@@ -37,7 +37,7 @@ const quill = new Quill(editor, {
 Copy video-resize.min.js into your web root or include from node_modules
 
 ```html
-<script src="/node_modules/quill-video-resize-module/video-resize.min.js"></script>
+<script src="/node_modules/quill-video-resize/video-resize.min.js"></script>
 ```
 
 ```javascript
@@ -175,7 +175,7 @@ the module setup.
 For example,
 
 ```javascript
-import { Resize, BaseModule } from 'quill-video-resize-module';
+import { Resize, BaseModule } from 'quill-video-resize';
 
 class MyModule extends BaseModule {
     // See src/modules/BaseModule.js for documentation on the various lifecycle callbacks
